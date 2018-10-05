@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './components/main/app.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -18,7 +19,25 @@ import { HomeComponent } from './components/home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: HomeComponent
+      },
+      {
+        path: 'newsletter',
+        component: ContactComponent
+      },
+      {
+        path: ':format',
+        component: AdFormatsComponent
+      },
+      {
+        path: ':format/:tag',
+        component: AdFormatsComponent
+      }
+    ], { useHash: true })
   ],
   providers: [],
   bootstrap: [AppComponent]
