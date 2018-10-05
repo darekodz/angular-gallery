@@ -1,3 +1,37 @@
-<p>
-  home works!
-</p>
+<!-- Home Section -->
+<div id="home" class="page">
+  <div class="container">
+      <!-- Title Page -->
+      <div class="row">
+          <div class="span12">
+              <div class="title-page">
+                  <h1 class="title">Welcome to our new Rich Media Gallery</h1>
+                  <h2 class="title-description">Which category do you want to visit ?</h2>
+              </div>
+          </div>
+      </div>
+      <!-- End Title Page -->
+     <br><br>
+      <!-- Categories -->
+      <div class="row" id="homeSection">
+  
+      <div *ngFor="let format of formats" class="span4 profile">
+          <a routerLink="/{{format.url}}">
+              <div class="image-wrap">
+                    <div class="hover-wrap">
+                        <span class="overlay-img"></span>
+                        <span class="overlay-text-thumb">View Demos</span>
+                    </div>
+                    <img src="{{format.imgSrc}}" alt="{{format.name}}">
+                </div>
+           </a>
+              <h1 class="profile-name" style="text-align:center; font-size:24px">{{format.name}}</h1>
+              <p class="profile-description">{{format.desc}}</p>
+          </div>
+  
+      </div>
+      <!-- End People -->
+  </div>
+  <br><br>
+  </div>
+  <!-- End Home Section -->
