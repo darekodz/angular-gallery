@@ -17,21 +17,21 @@ export class WebService {
     getTemplates(format: number, tag: number): Promise<Template[]> {
         return this.http.get(this.templatesUrl + '?' + (tag ? 'tag=' + tag + '&' : '') + 'format=^' + format + '$')
             .toPromise()
-            .then(response => response.json().data as Template[])
+            .then(response => response['_body'] as Template[])
             .catch(this.handleError);
     }
 
     getTags(format: number): Promise<Tag[]> {
         return this.http.get(this.tags + '?format=^' + format + '$')
             .toPromise()
-            .then(response => response.json().data as Tag[])
+            .then(response => response['_body'] as Tag[])
             .catch(this.handleError);
     }
 
     getTagByUrl(formatId: number, url: string): Promise<Tag> {
         return this.http.get(this.tags + '?format=' + formatId + '&url=^' + url + '$')
             .toPromise()
-            .then(response => response.json().data as Tag)
+            .then(response => response['_body'] as Tag)
             .catch(this.handleError);
     }
 
@@ -45,7 +45,7 @@ export class WebService {
     getFormatByUrl(url: string): Promise<Format> {
         return this.http.get(this.formats + '?url=^' + url + '$')
             .toPromise()
-            .then(response => response.json().data as Format)
+            .then(response => response['_body'] as Format)
             .catch(this.handleError);
     }
 
