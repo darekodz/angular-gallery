@@ -38,7 +38,7 @@ export class WebService {
     getFormats(): Promise<Format[]> {
         return this.http.get(this.formats)
             .toPromise()
-            .then(response => response.json().data as Format[])
+            .then(response => response['_body'] as Format[])
             .catch(this.handleError);
     }
 
