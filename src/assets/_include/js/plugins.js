@@ -135,7 +135,7 @@ self.getPositions();
 },
 
 getHash: function($link) {
-return $link.attr('href').split('#')[1];
+return $link.attr('href').split('#')[2];
 },
 
 getPositions: function() {
