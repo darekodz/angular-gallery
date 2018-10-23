@@ -335,12 +335,12 @@ BRUSHED.goSection = function(){
 ================================================== */
 
 BRUSHED.goUp = function(){
-	$('#goUp').on('click', function(){
-		$target = $($(this).attr('href')).offset().top-30;
+	// $('#goUp').on('click', function(){
+	// 	$target = $($(this).attr('href')).offset().top-30;
 		
-		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
-		return false;
-	});
+	// 	$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
+	// 	return false;
+	// });
 }
 
 
