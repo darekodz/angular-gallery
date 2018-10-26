@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.fancybox-close:before {
+    content: "\e05a";
+    font-family: 'Icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+
+    left: 50%;
+    top: 50%;
+    margin: -11px 0 0 -11px;
+    font-size: 22px;
+    line-height: 1em;
+    position: absolute;
+    color: #FFFFFF;
+}
+
+.fancybox-next span:before {
+    content: "\e0d3";
+
+    font-family: 'Icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+
+    left: 50%;
+    top: 50%;
+    margin: -15px 0 0 -15px;
+    font-size: 30px;
+    line-height: 1em;
+    position: absolute;
+    color: #FFFFFF;
+}
+
+.fancybox-prev span:before {
+    content: "\e0d5";
+
+    font-family: 'Icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+
+    left: 50%;
+    top: 50%;
+    margin: -15px 0 0 -17px;
+    font-size: 30px;
+    line-height: 1em;
+    position: absolute;
+    color: #FFFFFF;
+}

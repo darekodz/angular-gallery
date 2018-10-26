@@ -1,64 +1,78 @@
 <!-- Ad Formats Section-->
 <div id="work" class="page" style="padding-top:0px">
-  <div class="container" id="formatSection">
-      <!-- Title Page -->
-      <div class="row">
-          <div class="span12">
-              <div class="title-page">
-                  <h2 class="title">Ad Formats</h2>
-                  <!-- <h3 class="title-description">Check Out Our Projects on <a href="#">Dribbble</a>.</h3> -->
-              </div>
-          </div>
-      </div>
-      <!-- End Title Page -->
-      <!-- Start Alerts/Tabs Section -->
-      <div class="row">
-          <!-- Start Tabs -->
-          <div class="span12">
-              <div class="tabbable">
-                  <ul class="nav nav-tabs" id="platformTab">
-                      <li *ngFor="let format of formats" [routerLinkActive]="['active']"><a routerLink="/{{format.url}}" data-toggle="tab" id="_btnTab{{format.id}}">{{format.name}}</a></li>
-                  </ul>
-                  <div class="tab-content">
-                      <div class="tab-pane fade in active" id="web">
-                          <!-- Web Category -->
-                          <div class="row">
-                              <div class="span3">
-                                  <!-- Filter -->
-                                  <nav class="formatNav work-nav">
-                                      <ul id="filters" class="ulformatsTags option-set" data-option-key="filter">
-                                          <li class="type-work">Filter by type</li>
-                                          <li><a routerLink="/{{currentFormat}}" data-option-value="*" [routerLinkActive]="['selected']" [routerLinkActiveOptions]="{exact:true}">All</a></li>
-                                          <li *ngFor="let tag of tags"><a [routerLinkActive]="['selected']" routerLink="/{{currentFormat}}/{{tag.url}}">{{tag.name}}</a></li>
-                                      </ul>
-                                  </nav>
-                                  <!-- End Filter -->
-                              </div>
-                              <!-- List of Web formats -->
-                              <div class="span9">
-                                  <div class="row">
-                                      <section class="ulThumbsWrapper">
-                    <ul class="ulThumbs">
-                                              <li *ngFor="let template of templates" class="item-thumbs span3 {{(template.tag).join(' ')}}">
-                                                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{template.name}}" href="{{template.href}}" target="_blank">
-                                                      <span class="overlay-img"></span>
-                                                      <span class="overlay-text-thumb2">{{template.name}}</span>
-                                                  </a>
-                                                  <img src="{{template.imgSrc}}" alt="{{template.name}}">
-                                              </li>
-                                          </ul>
-                                      </section>
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- End Web category -->
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- End Tabs -->
-      </div>
-      <!-- End Alerts/Tabs Section -->
-  </div>
+    <div class="container" id="formatSection">
+        <!-- Title Page -->
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">Ad Formats</h2>
+                    <!-- <h3 class="title-description">Check Out Our Projects on <a href="#">Dribbble</a>.</h3> -->
+                </div>
+            </div>
+        </div>
+        <!-- End Title Page -->
+        <!-- Start Alerts/Tabs Section -->
+        <div class="row">
+            <!-- Start Tabs -->
+            <div class="span12">
+                <div class="tabbable">
+                    <ul class="nav nav-tabs" id="platformTab">
+                        <li *ngFor="let format of formats" [routerLinkActive]="['active']"><a routerLink="/{{format.url}}"
+                                data-toggle="tab" id="_btnTab{{format.id}}">{{format.name}}</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="web">
+                            <!-- Web Category -->
+                            <div class="row">
+                                <div class="span3">
+                                    <!-- Filter -->
+                                    <nav class="formatNav work-nav">
+                                        <ul id="filters" class="ulformatsTags option-set" data-option-key="filter">
+                                            <li class="type-work">Filter by type</li>
+                                            <li><a routerLink="/{{currentFormat}}" data-option-value="*"
+                                                    [routerLinkActive]="['selected']" [routerLinkActiveOptions]="{exact:true}">All</a></li>
+                                            <li *ngFor="let tag of tags"><a [routerLinkActive]="['selected']"
+                                                    routerLink="/{{currentFormat}}/{{tag.url}}">{{tag.name}}</a></li>
+                                        </ul>
+                                    </nav>
+                                    <!-- End Filter -->
+                                </div>
+                                <!-- List of Web formats -->
+                                <div class="span9">
+                                    <div class="row">
+                                        <section class="ulThumbsWrapper">
+                                            <ul class="ulThumbs">
+
+                                                <!-- <li *ngFor="let template of templates" class="item-thumbs span3 {{(template.tag).join(' ')}}">
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{template.name}}"
+                                                        href="{{template.href}}" target="_blank">
+                                                        <span class="overlay-img"></span>
+                                                        <span class="overlay-text-thumb2">{{template.name}}</span>
+                                                    </a>
+                                                    <img src="{{template.imgSrc}}" alt="{{template.name}}">
+                                                </li> -->
+
+                                                <li *ngFor="let template of templates" class="item-thumbs span3 {{(template.tag).join(' ')}}">
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{template.name}}" href="{{template.imgSrc}}">
+                                                        <span class="overlay-img"></span>
+                                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                                    </a>
+                                                    <img src="{{template.imgSrc}}" alt="{{template.name}}">
+                                                </li>
+
+                                            </ul>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Web category -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tabs -->
+        </div>
+        <!-- End Alerts/Tabs Section -->
+    </div>
 </div>
 <!-- End Ad Format Section -->
