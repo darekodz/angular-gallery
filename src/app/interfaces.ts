@@ -15,8 +15,6 @@ export class Tag {
 
 export class Template {
   id: number;
-  name: string;
-  href: string;
   imgSrc: string;
   tag: number[];
   format: number;
