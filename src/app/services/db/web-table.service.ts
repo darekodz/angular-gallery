@@ -112,13 +112,10 @@ export class WebTableService implements InMemoryDbService {
 
     const tags: Tag[] = [
       // web tags
-      { id: 11, name: 'Rising Star', url: 'rising-star', format: 1 },
-      { id: 12, name: 'Background', url: 'background', format: 1 },
-      { id: 13, name: 'Expand', url: 'expand-web', format: 1 },
-      { id: 14, name: 'Interstitial', url: 'interstitial-web', format: 1 },
-      { id: 15, name: 'Floating', url: 'floating', format: 1 },
-      { id: 16, name: 'Native', url: 'native', format: 1 },
-      { id: 17, name: 'More Interactive Formats', url: 'more-web', format: 1 },
+      { id: 11, name: 'Sports', url: 'sports', format: 1 },
+      { id: 12, name: 'Exclusive', url: 'exclusive', format: 1 },
+      { id: 13, name: '4x4', url: '4x4', format: 1 },
+      { id: 14, name: 'Small', url: 'small', format: 1 },
 
       // mobile web
       { id: 18, name: 'Mobile Web', url: 'mobile-web', format: 2 },
