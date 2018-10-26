@@ -119,19 +119,4 @@ $(document).ready(function() {
 	End Filter isotope
 	=======================================*/
 
-	setTimeout(function() {
-	$("#toto").load('http://demo.smartadserver.com/gallery/demo_web/portrait_iab.html', function() {
-			$.fancybox.open({
-				href:"#toto",
-				fitToView:!1,
-				maxWidth:1200,
-				maxHeight:900,
-				autoSize:!0,
-				closeClick:!1,
-				openEffect:"fade",
-				closeEffect:"fade"
-				});
-		});
-}, 2000);
-
 });
