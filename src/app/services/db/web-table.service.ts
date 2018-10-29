@@ -8,11 +8,11 @@ export class WebTableService implements InMemoryDbService {
     const templates: Template[] = [
       // web templates
       { id: 11, imgSrc: 'assets/_include/img/content/cars/sports/alen-jacob-589057-unsplash.jpg', tag: [11], format: 1 },
-      { id: 12, imgSrc: 'assets/_include/img/content/cars/sports/ant-miner-722665-unsplash.jpg', tag: [11], format: 1 },
-      { id: 13, imgSrc: 'assets/_include/img/content/cars/sports/bobby-allen-1073696-unsplash.jpg', tag: [11], format: 1 },
+      { id: 12, imgSrc: 'assets/_include/img/content/cars/sports/ant-miner-722665-unsplash.jpg', tag: [11, 12], format: 1 },
+      { id: 13, imgSrc: 'assets/_include/img/content/cars/sports/bobby-allen-1073696-unsplash.jpg', tag: [11, 12], format: 1 },
       { id: 14, imgSrc: 'assets/_include/img/content/cars/sports/cory-rogers-519598-unsplash.jpg', tag: [11], format: 1 },
       { id: 15, imgSrc: 'assets/_include/img/content/cars/sports/dara-esh-1090610-unsplash.jpg', tag: [11], format: 1 },
-      { id: 16, imgSrc: 'assets/_include/img/content/cars/sports/eduardo-flores-759299-unsplash.jpg', tag: [11], format: 1 },
+      { id: 16, imgSrc: 'assets/_include/img/content/cars/sports/eduardo-flores-759299-unsplash.jpg', tag: [11, 12], format: 1 },
       { id: 17, imgSrc: 'assets/_include/img/content/cars/sports/jace-abshire-1070396-unsplash.jpg', tag: [11], format: 1 },
       { id: 18, imgSrc: 'assets/_include/img/content/cars/sports/koushik-chowdavarapu-574442-unsplash.jpg', tag: [11], format: 1 },
       { id: 19, imgSrc: 'assets/_include/img/content/cars/sports/luis-perez-companc-314366-unsplash.jpg', tag: [11], format: 1 },
