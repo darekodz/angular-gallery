@@ -6,7 +6,7 @@ import { Template, Tag, Format } from './../../interfaces';
 export class WebTableService implements InMemoryDbService {
   createDb() {
     const templates: Template[] = [
-      // web templates
+      // cars
       { id: 11, imgSrc: 'assets/_include/img/content/cars/sports/alen-jacob-589057-unsplash.jpg', tag: [11], format: 1 },
       { id: 12, imgSrc: 'assets/_include/img/content/cars/sports/ant-miner-722665-unsplash.jpg', tag: [11, 12], format: 1 },
       { id: 13, imgSrc: 'assets/_include/img/content/cars/sports/bobby-allen-1073696-unsplash.jpg', tag: [11, 12], format: 1 },
@@ -20,35 +20,27 @@ export class WebTableService implements InMemoryDbService {
       { id: 21, imgSrc: 'assets/_include/img/content/cars/sports/maxime-renard-610756-unsplash.jpg', tag: [11], format: 1 },
       { id: 22, imgSrc: 'assets/_include/img/content/cars/sports/remy_loz-642393-unsplash.jpg', tag: [11], format: 1 },
       { id: 23, imgSrc: 'assets/_include/img/content/cars/sports/sven-brandsma-386364-unsplash.jpg', tag: [11], format: 1 },
-      { id: 24, imgSrc: 'assets/_include/img/work/thumbs/peelback.png', tag: [17], format: 1 },
+      { id: 24, imgSrc: 'assets/_include/img/content/cars/4x4/jonathan-gallegos-725068-unsplash.jpg', tag: [13], format: 1 },
+      { id: 25, imgSrc: 'assets/_include/img/content/cars/4x4/nikolas-noonan-563399-unsplash.jpg', tag: [13], format: 1 },
+      { id: 26, imgSrc: 'assets/_include/img/content/cars/4x4/peter-pryharski-432378-unsplash.jpg', tag: [13], format: 1 },
+      { id: 27, imgSrc: 'assets/_include/img/content/cars/4x4/ty-feague-491286-unsplash.jpg', tag: [13], format: 1 },
+      { id: 28, imgSrc: 'assets/_include/img/content/cars/small/anton-chernyavskiy-553692-unsplash.jpg', tag: [14], format: 1 },
+      { id: 29, imgSrc: 'assets/_include/img/content/cars/small/avantgarde-concept-1081945-unsplash.jpg', tag: [14], format: 1 },
+      { id: 30, imgSrc: 'assets/_include/img/content/cars/small/liam-simpson-674172-unsplash.jpg', tag: [14], format: 1 },
+      { id: 31, imgSrc: 'assets/_include/img/content/cars/small/rohit-tandon-65836-unsplash.jpg', tag: [14], format: 1 },
 
-      // mobile web
-      { id: 25, imgSrc: 'assets/_include/img/work/thumbs/in-image.png', tag: [18], format: 2 },
-      { id: 26, imgSrc: 'assets/_include/img/work/thumbs/expand_two_creatives_mobileweb.png', tag: [18, 21], format: 2 },
-      { id: 27, imgSrc: 'assets/_include/img/work/thumbs/mobile_parallax_gallery.png', tag: [19, 20], format: 2 },
-      { id: 28, imgSrc: 'assets/_include/img/work/thumbs/native_ad.png', tag: [18], format: 2 },
-      { id: 29, imgSrc: 'assets/_include/img/work/thumbs/background_reveal.png', tag: [18], format: 2 },
-      { id: 30, imgSrc: 'assets/_include/img/work/thumbs/parallax_rwd.png', tag: [18], format: 2 },
-      { id: 31, imgSrc: 'assets/_include/img/work/thumbs/overslide_rwd.png', tag: [18, 25], format: 2 },
-      { id: 32, imgSrc: 'assets/_include/img/work/thumbs/Adhesion_banner_Icon_New_230x169.png', tag: [22, 18], format: 2 },
-      { id: 33, imgSrc: 'assets/_include/img/work/thumbs/Slideshow_230x169_New.png', tag: [18, 23], format: 2 },
-      { id: 34, imgSrc: 'assets/_include/img/work/thumbs/interstitial_rwd.png', tag: [25, 18], format: 2 },
-      { id: 35, imgSrc: 'assets/_include/img/work/thumbs/interstitial.png', tag: [25, 18], format: 2 },
-      { id: 36, imgSrc: 'assets/_include/img/work/thumbs/spincube_mobileweb.png', tag: [26, 18], format: 2 },
-      { id: 37, imgSrc: 'assets/_include/img/work/thumbs/flip_banner_mobileweb.png', tag: [21, 18], format: 2 },
-      { id: 38, imgSrc: 'assets/_include/img/work/thumbs/expand_banner_mobileweb.png', tag: [21, 18], format: 2 },
-      { id: 39, imgSrc: 'assets/_include/img/work/thumbs/reveal_banner_mobileweb.png', tag: [21, 18], format: 2 },
-      { id: 40, imgSrc: 'assets/_include/img/work/thumbs/floor_ad_for_mobile.png', tag: [18, 24], format: 2 },
-      { id: 41, imgSrc: 'assets/_include/img/work/thumbs/floor_ad_for_mobile.png', tag: [18, 24], format: 2 },
-      { id: 42, imgSrc: 'assets/_include/img/work/thumbs/banner_slideshow_mobileweb.png', tag: [23, 18], format: 2 },
-      { id: 43, imgSrc: 'assets/_include/img/work/thumbs/banner_html_mobileweb.png', tag: [18], format: 2 },
-      { id: 44, imgSrc: 'assets/_include/img/work/thumbs/native_ad_format.png', tag: [19], format: 2 },
-      { id: 45, imgSrc: 'assets/_include/img/work/thumbs/resize_banner_mobileapp.png', tag: [21, 19], format: 2 },
-      { id: 46, imgSrc: 'assets/_include/img/work/thumbs/transparent_cover_mobileapp.png', tag: [26, 19], format: 2 },
-      { id: 47, imgSrc: 'assets/_include/img/work/thumbs/swipe_mobileapp.png', tag: [26, 19], format: 2 },
-      { id: 48, imgSrc: 'assets/_include/img/work/thumbs/html5_interstitial_mobileapp.png', tag: [25, 19], format: 2 },
+      // women
+      { id: 31, imgSrc: 'assets/_include/img/content/women/brunette/flaunter-com-1056942-unsplash.jpg', tag: [15], format: 2 },
+      { id: 32, imgSrc: 'assets/_include/img/content/women/brunette/suhyeon-choi-104926-unsplash.jpg', tag: [15], format: 2 },
+      { id: 33, imgSrc: 'assets/_include/img/content/women/brunette/tiffany-combs-711921-unsplash.jpg', tag: [15], format: 2 },
+      { id: 34, imgSrc: 'assets/_include/img/content/women/blond/marius-held-639949-unsplash.jpg', tag: [16], format: 2 },
+      { id: 35, imgSrc: 'assets/_include/img/content/women/blond/tim-gouw-79563-unsplash.jpg', tag: [16], format: 2 },
+      { id: 36, imgSrc: 'assets/_include/img/content/women/blond/yanapi-senaud-676719-unsplash.jpg', tag: [16], format: 2 },
+      { id: 37, imgSrc: 'assets/_include/img/content/women/red-hair/matheus-ferrero-350443-unsplash.jpg', tag: [17], format: 2 },
+      { id: 38, imgSrc: 'assets/_include/img/content/women/red-hair/rawpixel-1090748-unsplash.jpg', tag: [17], format: 2 },
+      { id: 39, imgSrc: 'assets/_include/img/content/women/red-hair/sam-manns-379040-unsplash.jpg', tag: [17], format: 2 },
 
-      // video
+      // sport
       { id: 49, imgSrc: 'assets/_include/img/work/thumbs/video_parallax_format_mobile_230x169_gallery.png', tag: [29], format: 3 },
       { id: 50, imgSrc: 'assets/_include/img/work/thumbs/mobile_video_interstitital.png', tag: [29], format: 3 },
       { id: 51, imgSrc: 'assets/_include/img/work/thumbs/mobile_intervideo2_230x169.png', tag: [29], format: 3 },
@@ -80,7 +72,7 @@ export class WebTableService implements InMemoryDbService {
       { id: 77, imgSrc: 'assets/_include/img/work/thumbs/vignette_video_mobileweb.png', tag: [29], format: 3 },
       { id: 78, imgSrc: 'assets/_include/img/work/thumbs/vignette_video_mobileweb.png', tag: [29], format: 3 },
 
-      // rtb
+      // mountain
       { id: 79, imgSrc: 'assets/_include/img/work/thumbs/smart-video-flow.png', tag: [33, 30], format: 4 },
       { id: 80, imgSrc: 'assets/_include/img/work/thumbs/interstitial_rwd.png', tag: [31], format: 4 },
       { id: 81, imgSrc: 'assets/_include/img/work/thumbs/interstitial_rwd.png', tag: [30], format: 4 },
@@ -111,33 +103,26 @@ export class WebTableService implements InMemoryDbService {
     ];
 
     const tags: Tag[] = [
-      // web tags
+      // car
       { id: 11, name: 'Sports', url: 'sports', format: 1 },
       { id: 12, name: 'Exclusive', url: 'exclusive', format: 1 },
       { id: 13, name: '4x4', url: '4x4', format: 1 },
       { id: 14, name: 'Small', url: 'small', format: 1 },
 
-      // mobile web
-      { id: 18, name: 'Mobile Web', url: 'mobile-web', format: 2 },
-      { id: 19, name: 'Mobile App', url: 'mobile-app', format: 2 },
-      { id: 20, name: 'Mobile Banner', url: 'mobile-banner', format: 2 },
-      { id: 21, name: 'Expand', url: 'expand-mobile', format: 2 },
-      { id: 22, name: 'Rising Star', url: 'mobile-rising-star', format: 2 },
-      { id: 23, name: 'Slideshow', url: 'slideshow', format: 2 },
-      { id: 24, name: 'HTML5', url: 'html5', format: 2 },
-      { id: 25, name: 'Interstitial', url: 'interstitial-mobile', format: 2 },
-      { id: 26, name: 'More Interactive Formats', url: 'more-mobile', format: 2 },
+      // women
+      { id: 15, name: 'Brunette', url: 'brunette', format: 2 },
+      { id: 16, name: 'Blond', url: 'blond', format: 2 },
+      { id: 17, name: 'Red Hair', url: 'red-hair', format: 2 },
 
-      // video
-      { id: 27, name: 'In-stream Web - VAST3 offer', url: 'instream-web', format: 3 },
-      { id: 28, name: 'Out-stream Web - VAST3 offer', url: 'outstream-web', format: 3 },
-      { id: 29, name: 'Out-stream Mobile', url: 'outstream-mobile', format: 3 },
+      // sport
+      { id: 18, name: 'Type 1', url: 'type1', format: 3 },
+      { id: 19, name: 'Type 2', url: 'type2', format: 3 },
+      { id: 20, name: 'Type 3', url: 'type2', format: 3 },
 
-      // rtb
-      { id: 30, name: 'Web', url: 'web', format: 4 },
-      { id: 31, name: 'Mobile Web', url: 'mobile-web', format: 4 },
-      { id: 32, name: 'Mobile App', url: 'mobile-app', format: 4 },
-      { id: 33, name: 'Video', url: 'video', format: 4 }
+      // mountains
+      { id: 21, name: 'Type 1', url: 'type1', format: 4 },
+      { id: 22, name: 'Type 2', url: 'type2', format: 4 },
+      { id: 23, name: 'Type 3', url: 'type2', format: 4 },
     ];
 
     const formats: Format[] = [
