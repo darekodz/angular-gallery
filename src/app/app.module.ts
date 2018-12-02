@@ -39,7 +39,7 @@ import { HomeComponent } from './components/home/home.component';
         path: ':format/:tag',
         component: AdFormatsComponent
       }
-    ], { useHash: true })
+    ], { useHash: false })
   ],
   providers: [WebService],
   bootstrap: [AppComponent]
