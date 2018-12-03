@@ -77,10 +77,10 @@ BRUSHED.listenerMenu = function(){
 // 		thumb_links				:	0,			// Individual thumb links for each slide
 // 		thumbnail_navigation    :   0,			// Thumbnail navigation
 // 		slides 					:  	[			// Slideshow Images
-// 											// {image : '_include/img/slider-images/slide_risingstars.png', title : '<div class="slide-content"></div>', thumb : '', url : ''},
-// 											// {image : '_include/img/slider-images/slide_outstream1.png', title : '<div class="slide-content"></div>', thumb : '', url : ''},
-// 											// {image : '_include/img/slider-images/slide_inpage1.png', title : '<div class="slide-content"></div>', thumb : '', url : ''},
-// 											// {image : '_include/img/slider-images/Fond-RTB2.png', title : '<div class="slide-content"></div>', thumb : '', url : ''}
+// 											// {image : 'img/slider-images/slide_risingstars.png', title : '<div class="slide-content"></div>', thumb : '', url : ''},
+// 											// {image : 'img/slider-images/slide_outstream1.png', title : '<div class="slide-content"></div>', thumb : '', url : ''},
+// 											// {image : 'img/slider-images/slide_inpage1.png', title : '<div class="slide-content"></div>', thumb : '', url : ''},
+// 											// {image : 'img/slider-images/Fond-RTB2.png', title : '<div class="slide-content"></div>', thumb : '', url : ''}
 											  
 // 									],
 									
@@ -250,7 +250,7 @@ BRUSHED.contactForm = function(){
 		
 		$.ajax({
 			type: "POST",
-			url: "_include/php/contact.php",
+			url: "php/contact.php",
 			data: fields,
 			dataType: 'json',
 			success: function(response) {
@@ -277,7 +277,7 @@ BRUSHED.tweetFeed = function(){
 	var valueTop = -64; // Margin Top Value
 	
     $("#ticker").tweet({
-          modpath: '_include/js/twitter/',
+          modpath: 'js/twitter/',
           username: "Bluxart", // Change this with YOUR ID
           page: 1,
           avatar_size: 0,
@@ -460,7 +460,7 @@ $(document).ready(function(){
 	// Modernizr.load([
 	// {
 	// 	test: Modernizr.placeholder,
-	// 	nope: '_include/js/placeholder.js', 
+	// 	nope: 'js/placeholder.js', 
 	// 	complete : function() {
 	// 			/*if (!Modernizr.placeholder) {
 	// 					Placeholders.init({
